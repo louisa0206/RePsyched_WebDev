@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="playground+second.css">
+
+</head>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+  <a class="navbar-brand" href="#"><img src="logo_black_transparent_270x80.png" class="logo"></a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="expandme">
+      <div class="navbar-nav ml-auto">
+          <li class="nav-item"> 
+              <a href="Home" class="nav-item nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"" id="navbardrop">Bins</a>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Glas Bin</a>
+                  <a class="dropdown-item" href="#">Paper Bin</a>
+                  <a class="dropdown-item" href="#">Plastic Bin</a>
+                  <a class="dropdown-item" href="#">Organic Bin</a>
+                  <a class="dropdown-item" href="#">Metal Bin</a>
+                  <a class="dropdown-item" href="#">Hazardous Bin</a>
+              </div> 
+          <li class="nav-item"> 
+              <a href="Home" class="nav-item nav-link">Map</a></li>
+          <li class="nav-item"> 
+              <a href="Home" class="nav-item nav-link">Contact us</a></li>
+      </div>
+  </div> 
+</nav> 
+
+
+<body>
+
+<div id='map'></div>
+
+<script>
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ3dlbmRhIiwiYSI6ImNrazVpdXR0MjBiamIyb2xrcXFucHc3NW4ifQ.ePzMcXt4dm7i61ZyrLDDNA';
+
+let map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/light-v10',
+  center: [13.408, 52.52],
+  zoom: 13
+});
+
+// code from the next step will go here!
+let geojson = {
+  type: 'FeatureCollection',
+  features: [{
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [13.408510, 52.526900]
+    },
+    properties: {
+      title: 'Green Container',
+      description: 'Max-Beer-Str./ Schendelgasse'
+    }
+  },
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [13.405750, 52.529660]
+    },
+    properties: {
+      title: 'Green container',
+      description: 'Torstr. 89/ Gormanstr.'
+    }
+  }]
+};
+// add markers to map
+geojson.features.forEach(function(marker) {
+
+// create a HTML element for each feature
+let el = document.createElement('div');
+el.className = 'marker';
+
+// make a marker for each feature and add to the map
+new mapboxgl.Marker(el)
+  .setLngLat(marker.geometry.coordinates)
+  .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+    .setHTML('<h3 id="binType">' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+  .addTo(map);
+});
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+body {
+      margin-top: 10%;
+      padding: 8%;
+    } 
+
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    border: 1px solid white;
+    }
+
+    .marker {
+      background-image: url('https://www.pngkit.com/png/detail/236-2363966_google-maps-marker-grey.png');
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .mapboxgl-popup {
+      max-width: 200px;
+    }
+
+    .mapboxgl-popup-content {
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+

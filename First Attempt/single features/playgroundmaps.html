@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="playgroundmaps.css">
+</head>
+<body>
+
+<div id='map'></div>
+
+<script>
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ3dlbmRhIiwiYSI6ImNrazVpdXR0MjBiamIyb2xrcXFucHc3NW4ifQ.ePzMcXt4dm7i61ZyrLDDNA';
+
+let map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/light-v10',
+  center: [13.408, 52.52],
+  zoom: 13
+});
+
+// code from the next step will go here!
+let geojson = {
+  type: 'FeatureCollection',
+  features: [{
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [13.408510, 52.526900]
+    },
+    properties: {
+      title: 'Green Container',
+      description: 'Max-Beer-Str./ Schendelgasse'
+    }
+  },
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [13.405750, 52.529660]
+    },
+    properties: {
+      title: 'Green container',
+      description: 'Torstr. 89/ Gormanstr.'
+    }
+  }]
+};
+// add markers to map
+geojson.features.forEach(function(marker) {
+
+// create a HTML element for each feature
+let el = document.createElement('div');
+el.className = 'marker';
+
+// make a marker for each feature and add to the map
+new mapboxgl.Marker(el)
+  .setLngLat(marker.geometry.coordinates)
+  .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+    .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+  .addTo(map);
+});
+
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl());
+</script>
+
+</body>
+</html>
