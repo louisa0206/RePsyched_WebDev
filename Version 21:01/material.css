@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+#glass{
+    position: relative;
+    left: 400px;
+    font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 55px;
+line-height: 67px;
+margin-top: 15%;
+}
+h2{
+    position: relative;
+    left:400px;
+    font-family: Inter;
+font-style: italic;
+font-weight: bold;
+font-size: 26px;
+line-height: 31px;
+}
+.image{
+    position:relative;
+    left:400px;
+}
+.paragraph{
+    margin-left: 400px;
+    margin-right: 300px;
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+}
+h3{
+    position:relative;
+    left:400px;
+    font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 36px;
+}
+.glassbin{
+    position:relative;
+    left:400px;
+
+}
+.btn button{
+display: block;
+position:relative;
+left:750px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+background: #525252;
+color:white;
+border-radius: 5px;
+}
