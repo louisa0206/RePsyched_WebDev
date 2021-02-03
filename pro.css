@@ -1,62 +1,153 @@
 *{
     box-sizing: border-box;
 }
-
+body{
+    margin:0;
+    padding:0;
+}
+.homepage{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-decoration: none;
+color:  #333333;
+}
+.pagelink{
+    margin-top: 20px;
+    margin-left: 50px;
+}
 h1{
-    position: relative;
-    left: 400px;
+    margin-left: 400px;
     font-family: Inter;
 font-style: normal;
 font-weight: bold;
 font-size: 55px;
 line-height: 67px;
+color:  #1F313D;
 }
-h2{
-    position: relative;
-    left:400px;
+h3{
+    margin-left: 400px;
     font-family: Inter;
 font-style: italic;
 font-weight: bold;
 font-size: 26px;
 line-height: 31px;
+color:#1F313D;
 }
-.image{
-    position:relative;
-    left:400px;
+.sachen{
+    margin-left:400px;
 }
-.paragraph{
-    margin-left: 400px;
-    margin-right: 300px;
+p{
+    margin-left:400px;
+    margin-right:400px;
+    color:#1F313D;
     font-family: Inter;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 24px;
 }
-h3{
-    position:relative;
-    left:400px;
+h2{
+    margin-left:400px;
     font-family: Inter;
 font-style: normal;
 font-weight: bold;
 font-size: 30px;
 line-height: 36px;
+color:#1F313D;
 }
-.glassbin{
-    position:relative;
-    left:400px;
-
+.Gbin{
+    margin-left:400px;
 }
-.btn button{
-display: block;
-position:relative;
-left:750px;
-font-family: Roboto;
+.btn{
+    margin-left:700px;
+}
+.btn .button1{
+    display: block;
+    margin-top:10px;
+    width:220px;
+    height:39px;
+    border-radius:5px;
+    background-color: #525252;
+    color:#FFFFFF;
+    font-family: Roboto;
 font-style: normal;
 font-weight: 500;
 font-size: 15px;
 line-height: 18px;
-background: #525252;
-color:white;
-border-radius: 5px;
+align-items: center;
+text-align: center;
+}
+.btn .button2{
+    margin-top:5px;
+    margin-bottom: 5px;
+    width:220px;
+    height:39px;
+    border-radius:5px;
+    background-color: #525252;
+    color:#FFFFFF;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+align-items: center;
+text-align: center;
+}
+@media (max-width:1000px){
+    .btn{
+        position:relative;
+        right:300px;
+    }
+    .sachen .cupimg, .bottleimg, .jarimg{
+        display:block;
+    }
+}
+.greenbinpage{
+    margin-top: 20px;
+    margin-left:50px;
+}
+.currentpage{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-decoration: none;
+color:  #333333;
+}
+.pic2{
+    margin-left:400px;
+    margin-top: 20px;
+}
+.subimg{
+    margin-left:400px;
+    margin-top: 20px;
+}
+.container{
+    width:378px;
+    height:134px;
+    margin-right: 670px;
+    position: relative;
+    bottom: 100px;
+    left: 10px;
+}
+.container .pt1{
+    width: 378px;
+    height: 40px;
+    background-color: #3FA2F7;
+    border: 1.75px solid;
+    border-radius: 5px;
+    border-color: black;
+    color:white;
+}
+.container .pt2{
+    width: 378px;
+    height: 94px;
+    background-color: white;
+    border: 1.75px solid;
+    border-radius: 5px;
+    border-color: black;
 }
