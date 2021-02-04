@@ -1,0 +1,18 @@
+let suggestions = [
+    "Clothes",
+            "Oil",
+            "Glassbottles and jars",
+            "Glassbottles and jars with residue - Oil",
+            "Glassbottles and jars with residue - Food",
+            "Glassbottles and jars with residue - Cosmetics",
+            "Glassbottles and jars with residue - Cleaning products",
+            "Yogurt container",
+            "Cables",
+            "Videotapes",
+            "Garden soil",
+            "Gasoline",
+            "Gas bottles",
+            "Grass cuttings",
+            "Gift wrap",
+            "Greaseproof paper",
+];
