@@ -2,10 +2,14 @@
     box-sizing: border-box;
 }
 body{
-    margin:0;
+    margin: 0;
     padding:0;
 }
-.homepage{
+.greenbinpage{
+    margin-top: 20px;
+    margin-left:50px;
+}
+.currentpage{
     font-family: Roboto;
 font-style: normal;
 font-weight: 500;
@@ -13,10 +17,6 @@ font-size: 16px;
 line-height: 19px;
 text-decoration: none;
 color:  #333333;
-}
-.pagelink{
-    margin-top: 20px;
-    margin-left: 50px;
 }
 h1{
     margin-left: 300px;
@@ -27,6 +27,7 @@ font-size: 55px;
 line-height: 67px;
 color:  #1F313D;
 }
+
 h3{
     margin-left: 300px;
     font-family: Inter;
@@ -36,11 +37,8 @@ font-size: 26px;
 line-height: 31px;
 color:#1F313D;
 }
-.sachen{
-    margin-left:300px;
-}
-
 p{
+    width:618px;
     margin-left: 300px;
     margin-right: 200px;
     color:#1F313D;
@@ -51,28 +49,18 @@ font-size: 18px;
 line-height: 24px;
 text-align:justify;
 }
-p{
-    padding-bottom: 2vw;
-    padding-right: 1vw;
-    width: 618px;
-}
-h2{
+.pic2{
     margin-left:300px;
-    font-family: Inter;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 36px;
-color:#1F313D;
+    margin-top: 20px;
 }
-.Gbin{
+.subimg{
     margin-left:300px;
-    margin-top: 5px;
+    margin-top: 20px;
 }
-.btn{
+.bttn{
     margin-left:700px;
 }
-.btn .button1{
+.bttn .butn1{
     display: block;
     margin-top:10px;
     width:220px;
@@ -88,7 +76,7 @@ line-height: 18px;
 align-items: center;
 text-align: center;
 }
-.btn .button2{
+.bttn .butn2{
     margin-top:5px;
     margin-bottom: 5px;
     width:220px;
@@ -104,17 +92,15 @@ line-height: 18px;
 align-items: center;
 text-align: center;
 }
-
-
-.container{
+.container1{
     width:378px;
     height:134px;
-    margin-left: 300px;
+    margin-left:300px;
     position: relative;
-    bottom: 95px;
+    bottom:88px;
     left: 10px;
 }
-.container .pt1{
+.container1 .prt1{
     width: 378px;
     height: 40px;
     background-color: #3FA2F7;
@@ -123,7 +109,7 @@ text-align: center;
     border-color: black;
     color:white;
 }
-.container .pt2{
+.container1 .prt2{
     width: 378px;
     height: 94px;
     background-color: white;
@@ -132,20 +118,20 @@ text-align: center;
     border-color: black;
 }
 @media (max-width:950px){
-    .btn{
+    .bttn{
         position:relative;
         right:400px;     
     }
-    .container{
+    .container1{
         position:relative;
         top:1px;
-        margin-left:289px;
+        margin-left:289px ;
     }
     p{
         width:auto;
         font-size: larger;
     }
-    .sachen .cupimg, .bottleimg, .jarimg{
-        display:inline-block;
+    .subimg{
+        display: inline-block;
     }
 }
