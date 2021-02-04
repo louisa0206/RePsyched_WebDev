@@ -1,4 +1,14 @@
 # WebDev
 
-Hi
-the folder 21:01 contains the latest version called 'Fourth Attempt'. Please be aware that it (at this point) only works if you have the entire folder locally stored (because of the img). 
+Final Project
+
+Where to find it: 
+-> Folder: RePsyched
+
+How to open it: 
+-> save folder "RePsyched" to your Desktop
+-> open the folder via the Terminal (commands: 'cd Desktop/RePsyched')
+-> open the local Server via the Terminal (commands: 'python -m SimpleHTTPServer')
+
+-> open http://127.0.0.1:8000/home.html on your Google Chrome
+
