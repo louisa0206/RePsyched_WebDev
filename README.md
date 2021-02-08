@@ -19,7 +19,8 @@ How to open it:
 
 
 
-Additional Feature: Autocomplete Search bar 
+
+Additional Feature: Autocomplete Search bar / React
 
 Where to find it:
 
