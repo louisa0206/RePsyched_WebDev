@@ -35,3 +35,7 @@ How to open it:
 -> open the live-server via the Terminal (commands: 'yarn run dev-server') and open on the given local host
 
 Enjoy!!
+
+
+
+See https://github.com/users/louisa0206/projects/1 for the complete RePsyched Project
