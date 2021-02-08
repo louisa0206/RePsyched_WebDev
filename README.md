@@ -32,6 +32,6 @@ How to open it:
 
 -> open the folder via the Terminal (commands: 'cd Desktop/RePsyched_WebDev/WebDev/Final Project')
 
--> open the live Dev-Server via the Terminal (commands: 'yarn run dev-server') and open on the given local host
+-> open the live-server via the Terminal (commands: 'yarn run dev-server') and open on the given local host
 
 Enjoy!!
