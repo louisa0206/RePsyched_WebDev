@@ -30,7 +30,7 @@ How to open it:
 
 -> save folder "Final Project" to your Desktop
 
--> open the folder via the Terminal (commands: 'cd Desktop/RePsyched_WebDev/Final Project')
+-> open the folder via the Terminal (commands: 'cd Desktop/RePsyched_WebDev/WebDev/Final Project')
 
 -> open the live Dev-Server via the Terminal (commands: 'yarn run dev-server') and open on the given local host
 
