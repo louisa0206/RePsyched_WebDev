@@ -17,3 +17,4 @@ How to open it:
 
 -> open http://127.0.0.1:8000/home.html on your Google Chrome
 
+Enjoy!!
