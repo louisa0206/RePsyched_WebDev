@@ -36,6 +36,8 @@ How to open it:
 
 Enjoy!!
 
+***
 
-
-See https://github.com/users/louisa0206/projects/1 for the complete RePsyched Project
+See https://github.com/users/louisa0206/projects/1 for the complete RePsyched Project \
+Link to the Main Repository: https://github.com/louisa0206/RePsyched.git \
+Link to the Data Science Repository: https://github.com/louisa0206/RePsyched_DS.git
